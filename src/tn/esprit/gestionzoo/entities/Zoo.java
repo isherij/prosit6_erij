@@ -4,7 +4,7 @@ public class Zoo {
 
     public Animal[] animals;
     //instruction 25:
-    public Animal[] aquaticAnimals = new Animal[10];
+    public Aquatic[] aquaticAnimals = new Aquatic[10];
     private String name;
     private String city;
     public static final int NBRCAGES = 25;
@@ -134,7 +134,7 @@ public class Zoo {
     //instruction 29
     public float maxPenguinSwimmingDepth() {
         float maxSwimDepth = 0f;
-        for (Animal animal : aquaticAnimals) {
+        for (Aquatic animal : aquaticAnimals) {
             if (animal instanceof Penguin)
                 maxSwimDepth = ((Penguin) animal).getSwimmingDepth();
         }
@@ -147,7 +147,7 @@ public class Zoo {
         int NBRDolphins = 0;
         int NBRPenguins = 0;
 
-        for (Animal animal : aquaticAnimals) {
+        for (Aquatic animal : aquaticAnimals) {
             if (animal instanceof Dolphin)
                 NBRDolphins++;
             else if (animal instanceof Penguin)
