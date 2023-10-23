@@ -67,9 +67,9 @@ public class ZooManagement {
 //INSTRUCTION 26
         Aquatic A1 = new Aquatic("aaa","bb",16,true,"eee");
         myZoo.addAquaticAnimal(A1);
-        Aquatic A2 = new Aquatic("dd","vv",1,false,"eee");
+        Aquatic A2 = new Dolphin("dd","vv",1,false,"eee",12.1f);
         myZoo.addAquaticAnimal(A2);
-       Aquatic A3 = new Aquatic("aaa","bb",16,true,"eee");
+       Aquatic A3 = new Penguin("aaa","bb",16,true,"eee",14.5f);
         myZoo.addAquaticAnimal(A3);
  //INSTRUCTION 27
         A1.swim();
